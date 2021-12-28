@@ -51,12 +51,12 @@ client.on("message", async (message) => {
     client.commands.get("play").execute(message, args);
   }
   //   //by default
-  // else {
-  //  return message.reply(
-  //     "Check your commands that you have entered correctfully"
-  //   );
-  //  // client.commands.get("error").execute(message, args);
-  // }
+  else {
+   return message.reply(
+      "Check your commands that you have entered correctfully"
+    );
+   // client.commands.get("error").execute(message, args);
+  }
 });
 
 client.login(process.env.BOT_TOKEN);
